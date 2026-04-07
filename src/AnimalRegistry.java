@@ -1,23 +1,21 @@
 public class AnimalRegistry {
-    private Sheep normalSheep = new Sheep();
-    private Cow normalCow = new Cow();
-    private Horse normalHorse = new Horse();
+    private Sheep sheep;
+    private Cow cow;
+    private Horse horse;
 
-    // Returns the unmodified prototypes
-    public Animal getNormalSheep() { return normalSheep; }
-    public Animal getNormalCow() { return normalCow; }
-    public Animal getNormalHorse() { return normalHorse; }
-
-    // Returns modified clones
-    public Animal createSheepClone() {
-        Sheep s = (Sheep) normalSheep.clone();
-        s.setName("Shaun"); 
-        return s;
+    public AnimalRegistry() {
+        this.sheep = new Sheep();
+        this.cow = new Cow();
+        this.horse = new Horse();
     }
 
-    public Animal createHorseClone() {
-        Horse h = (Horse) normalHorse.clone();
-        h.setColor("Black");
-        return h;
+    public Animal createSheep() {
+        return sheep.clone();
+    }
+    public Animal createCow() {
+        return  cow.clone();
+    }
+    public Animal createHorse() {
+        return horse.clone();
     }
 }

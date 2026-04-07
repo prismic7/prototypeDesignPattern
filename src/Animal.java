@@ -1,6 +1,5 @@
-public interface Animal extends Cloneable {
-    Animal clone();
-    void makeSound();
-    void setName(String name);
-    void setColor(String color);
+public interface Animal  extends Cloneable {
+    public Animal clone();
+    public void makeSound();
+    public String getType();
 }
