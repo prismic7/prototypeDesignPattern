@@ -1,7 +1,5 @@
 # prototypeDesignPattern
 
-# Animal Prototype System
-
 This project implements the **Prototype Design Pattern** to manage and duplicate animal objects. It allows for the creation of "Normal" base animals and specialized "Clones" with modified attributes without re-instantiating the entire object from scratch.
 
 ## Components
